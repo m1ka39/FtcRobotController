@@ -190,11 +190,13 @@ public class ColorSensor extends LinearOpMode {
 
             // Update the hsvValues array by passing it to Color.colorToHSV()
             Color.colorToHSV(colors.toColor(), hsvValues);
-
+            float redAmount = colors.red * 100;
+            float greenAmount = colors.green * 100;
+            float blueAmount = colors.blue * 100;
             telemetry.addLine()
-                    .addData("Red", "%.3f", colors.red)
-                    .addData("Green", "%.3f", colors.green)
-                    .addData("Blue", "%.3f", colors.blue);
+                    .addData("Red", "%.3f", redAmount)
+                    .addData("Green", "%.3f", greenAmount)
+                    .addData("Blue", "%.3f", blueAmount);
             telemetry.addLine()
                     .addData("Hue", "%.3f", hsvValues[0])
                     .addData("Saturation", "%.3f", hsvValues[1])

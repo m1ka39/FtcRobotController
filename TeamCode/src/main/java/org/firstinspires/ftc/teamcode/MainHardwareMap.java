@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import android.util.Size;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.hardware.camera.BuiltinCameraDirection;
@@ -41,10 +42,10 @@ public class MainHardwareMap {
 
     public static void init(HardwareMap hwMap) {
         // Map Motors
-        FrontLeftDTM = hwMap.get(DcMotor.class, "FrontLeft");
-        FrontRightDTM = hwMap.get(DcMotor.class, "FrontRight");
-        RearLeftDTM = hwMap.get(DcMotor.class, "RearLeft");
-        RearRightDTM = hwMap.get(DcMotor.class, "RearRight");
+        FrontLeftDTM = hwMap.get(DcMotor.class, "FrontLeftDTM");
+        FrontRightDTM = hwMap.get(DcMotor.class, "FrontRightDTM");
+        RearLeftDTM = hwMap.get(DcMotor.class, "RearLeftDTM");
+        RearRightDTM = hwMap.get(DcMotor.class, "RearRightDTM");
 
         // Map Servos
 
